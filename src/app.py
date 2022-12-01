@@ -60,7 +60,7 @@ USERS = [
     {
         'name': 'John',
         'last_name': 'Doe',
-        'nickname': 'Suchomir',
+        'nickname': 'essa',
         'password': 'essa',
         'email': 'essa@essa',
     },
