@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{% block content %}
+<div class="container">
+    <div class="row align-items-center" >
+        <div class="row">
+        {% for guy in team %}
+            <div class="col" >
+                <div class="card" style="width: 25rem; margin-top: 5%;">
+                    <img src="{{guy.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{guy.name}}</h5>
+                        <p class="card-text">{{guy.description}}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+   
+        </div>
+    </div>
+</div>
+{% endblock %}

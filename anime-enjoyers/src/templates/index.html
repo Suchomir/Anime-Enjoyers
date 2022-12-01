@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+
+{% block content %}
+
+<div class="container">
+	
+	
+			<div class="row align-items-center">
+				<div class="row">
+					{% for item in items %}
+					<div class="col">
+						<div class="card" style="width: 25rem; margin-top: 5%;">
+							<img src="{{item.image}}" class="card-img-top" alt="We add image to your anime by ourselves.">
+							<div class="card-body">
+								<h5 class="card-title">{{item.title}}</h5>
+								<p class="card-text">{{item.description}}</p>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			
+			</div>
+			</div>
+		
+</div>
+{% endblock %}

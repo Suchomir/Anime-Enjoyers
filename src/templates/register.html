@@ -1,0 +1,56 @@
+{%extends "base.html"%}
+
+{% block content %}
+
+
+<div class="container" style="color:white">
+
+    <p class="text-center fs-2" style="margin-top: 10%;">Register Form</p>
+
+    <form action="#" method="post">
+
+    <div class="col-md-5 mx-auto mt-3" style="margin-top: 5%;">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" placeholder="John" required name="name">
+        </div>
+    </div>
+    <div class="col-md-5 mx-auto mt-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" placeholder="Doe" required name="last_name">
+        </div>
+    </div>
+    <div class="col-md-5 mx-auto mt-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label" >Nickname</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" placeholder="Anime_Enjoyer"  required name="nm">
+        </div>
+    </div>
+
+    <div class="col-md-5 mx-auto mt-3" >
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="staticEmail" placeholder="email@example.com" required name="email">
+        </div>
+    </div>
+    <div class="col-md-5 mx-auto mt-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label" >Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" required name="pass"> 
+        </div>
+    </div>
+
+    <div class="d-grid gap-2 col-1 mx-auto mt-3">
+        <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+
+    <p class="text-center fs-4" style="margin-top: 10%;">{{ message }}</p>
+
+    </form>
+
+
+</div>
+   
+
+{% endblock %}

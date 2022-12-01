@@ -1,0 +1,7 @@
+[config]
+url = https://devtestenterprise.ctfd.io/
+access_token = 2acee1228f406fc271fe32f041dcb8c7326e9bcb4eea1dfbb17b35f64c6c12bd
+
+[challenges]
+anime-enjoyers = https://github.com/Suchomir/anime-enjoyers.git
+

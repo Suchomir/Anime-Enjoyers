@@ -1,0 +1,15 @@
+name: Anime Enjoyers B)
+author: suchomir
+category: web
+description: "If you do not know what anime you should watch next go to our page!"
+value: 80
+
+type: standard
+
+image: .
+
+flags:
+  - flag{d4ng3r0us_4n1m3}
+  - d4ng3r0us_4n1m3
+
+version: "0.1"

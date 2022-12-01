@@ -1,0 +1,40 @@
+{%extends "base.html"%}
+
+{% block content %}
+
+
+<div class="container" style="color:white">
+
+    <p class="text-center fs-2" style="margin-top: 10%;">Login Form</p>
+
+    <form action="#" method="post">
+
+     
+        <div class="col-md-5 mx-auto mt-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label" maxlength="15" >Nickname</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="text" placeholder="Anime_Enjoyer" required name="nickname">
+            </div>
+        </div>
+
+       
+        <div class="col-md-5 mx-auto mt-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" required name="password">
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 col-1 mx-auto mt-3">
+            <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+
+    </form>
+
+    <p class="text-center fs-4" style="margin-top: 10%;">{{ message }}</p>
+
+
+</div>
+
+
+{% endblock %}

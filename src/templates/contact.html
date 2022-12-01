@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{% block content %}
+    <div class="container" style="color:white; margin-top: 5%">
+        <p class="text-center fs-1">If you know any anime that is worth recommending you can send it to us by this form :))</p>
+        <form action="#" method="post">
+            <div class="mb-3" style="margin-top:5%;" >
+                <label for="exampleFormControlInput1" class="form-label" >Your email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required name="email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Anime name</label>
+                <input class="form-control" id="exampleFormControlInput1" required name="title">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label" maxlength="100">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required name="description"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send It!</button>
+        </form>
+        <p class="text-center fs-4" style="margin-top: 10%;">{{ message }}</p>
+    </div>
+{% endblock %}
